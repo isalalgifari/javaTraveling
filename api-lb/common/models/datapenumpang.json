@@ -1,0 +1,50 @@
+{
+  "name": "datapenumpang",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "require": true
+    },
+    "tipeidentitas": {
+      "type": "string",
+      "require": true
+    },
+    "tlppemesan": {
+      "type": "string",
+      "require": true
+    },
+    "alamat": {
+      "type": "string",
+      "require": true
+    },
+    "namapemesan": {
+      "type": "string",
+      "require": true
+    },
+    "nomoridentitas": {
+      "type": "string",
+      "require": true
+    },
+    "email": {
+      "type": "string",
+      "require": true
+    },
+    "kota": {
+      "type": "string",
+      "require": true
+    },
+    "createAt": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

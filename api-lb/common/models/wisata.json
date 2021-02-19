@@ -1,0 +1,38 @@
+{
+  "name": "wisata",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "wilayah": {
+      "type": "string",
+      "require": true
+    },
+    "nama": {
+      "type": "string",
+      "require": true
+    },
+    "deskripsi": {
+      "type": "string",
+      "require": true
+    },
+    "kuantitas": {
+      "type": "string",
+      "require": true
+    },
+    "harga": {
+      "type": "string",
+      "require": true
+    },
+    "gambar": {
+      "type": "string",
+      "require": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

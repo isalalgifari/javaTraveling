@@ -1,0 +1,32 @@
+{
+    "name": "customer",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "nama": {
+        "type": "string",
+        "require": true
+      },
+      "alamat": {
+        "type": "string",
+        "require": true
+      },
+      "email": {
+        "type": "string",
+        "require": true
+      },
+      "identitas": {
+        "type": "string",
+        "require": true
+      }
+     
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

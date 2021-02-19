@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Email": {
+    "dataSource": "mailServer"
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "wisata": {
+    "dataSource": "mongodb"
+  },
+  "transaksi":{
+    "dataSource": "mongodb"
+  },
+  "datapenumpang":{
+    "dataSource": "mongodb"
+  },
+  "customer":{
+    "dataSource": "mongodb"
+  },
+  "cart": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "container":{
+     "dataSource":"storage",
+     "public":true
+  }
+}

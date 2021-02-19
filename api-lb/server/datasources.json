@@ -1,0 +1,37 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "database": "javatravel",
+    "name":"mongodb",
+    "connector":"mongodb",
+    "extended":true,
+    "allowExtendedOperators":true
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./files"
+  },
+  "mailServer": {
+    "name": "mailServer",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.sendgrid.net",
+        "secure": false,
+        "port": 587,
+        "auth": {
+          "user": "apikey",
+          "pass": "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"
+        }
+      }
+    ]
+  }
+
+
+}
